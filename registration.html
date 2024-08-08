@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link href="form.css" rel="stylesheet" type="text/css" />
+  </head>
+  <form
+    method="post"
+    action="http://localhost/project/registration.php"
+    enctype="multipart/form-data"
+  >
+    <div>
+      Enter Shop name:<br />
+      <input type="text" name="name" class="input" /><br />
+      Enter Shop location:<br />
+      <textarea name="location" class="input"></textarea><br />
+      Enter description:<br />
+      <textarea name="description" class="input"></textarea><br />
+      Enter contact:<br />
+      <input type="number" name="contact" class="input" /><br />
+      Upload shop image:
+      <input type="file" class="input" name="image" accept=".jpg,.jpeg,.png" />
+      <br />
+      <input type="submit" name="s" class="button" /><br />
+    </div>
+  </form>
+</html>

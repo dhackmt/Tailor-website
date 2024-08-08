@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link href="signup.css" rel="stylesheet" type="text/css"></link>
+    </head>
+    <body>
+        <h1>Sign Up</h1>
+<form method="post" action="http://localhost/project/signup.php">
+        <div>Create username:
+        <input type="text" name="u1" class="input" /><br/><br>
+        set password:
+        <input type="password" name="p1" class="input" /><br/><br>
+        <input type="submit" value="login" name='s' class="button"/></div>
+    </form>
+    <h1>already have an account? Sign in<a href="login.html">Sign in</a></h1>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<style>
+.error {
+  color: red;
+}
+</style>
+<link href="signup.css" rel="stylesheet" type="text/css"></link>
+</head>
+<body>
+<h1>SignUP Form</h1>
+<form id="myForm" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" onsubmit="return validateForm()">
+  <label for="username">Create Username:</label><br>
+  <input type="text" id="username" name="u1"><br>
+  <span id="usernameError" class="error"></span><br>
+  
+  <label for="password">Set Password:</label><br>
+  <input type="password" id="password" name="p1"><br>
+  <span id="passwordError" class="error"></span><br>
+  
+  <button type="submit" name="s">Submit</button>
+</form>
+
+<script>
+function validateForm() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var usernameError = document.getElementById("usernameError");
+  var passwordError = document.getElementById("passwordError");
+  
+  var isValid = true;
+
+  if (username === "") {
+    usernameError.textContent = "Username is required";
+    isValid = false;
+  } else if (username.length !== 8) {
+    usernameError.textContent = "Username must be 8 characters long";
+    isValid = false;
+  } else {
+    usernameError.textContent = "";
+  }
+
+  if (password === "") {
+    passwordError.textContent = "Password is required";
+    isValid = false;
+  } else {
+    passwordError.textContent = "";
+  }
+
+  return isValid;
+}
+</script>

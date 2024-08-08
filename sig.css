@@ -1,0 +1,84 @@
+.error {
+  color: red;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  /* background-image: url(tbg.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+h1 {
+  /* background: linear-gradient(135deg, blue, aqua); */
+  margin-left: 5%;
+  font-family: cursive;
+  font-size: 40px;
+  padding-left: 20px;
+  padding-right: 7px;
+  padding-top: 10px;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(228, 24, 24, 0.1); */
+  color: black;
+}
+
+form {
+  padding: 20px;
+}
+
+label {
+  color: #333;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #ff69b4, #800080);
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(135deg, #800080, #ff69b4);
+}
+
+.link {
+  text-align: center;
+}
+
+.link a {
+  color: #333;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}

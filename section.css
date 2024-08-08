@@ -1,0 +1,40 @@
+body {
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.l {
+  justify-content: center;
+  background-origin: border-box;
+  border-radius: 100px;
+  margin-left: 6%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-left: 10%;
+  justify-content: center;
+  color: white;
+  font-size: x-large;
+  padding: 2%;
+  text-decoration: none;
+}
+
+.l a {
+  text-decoration: none;
+  text-align: center;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.p {
+  justify-content: center;
+  margin-top: 40%;
+  font-size: 40px;
+  color: black;
+  padding: 2%;
+}
+
+.d li {
+  background-color: aliceblue;
+}
